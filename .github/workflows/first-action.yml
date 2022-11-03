@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow-dispatch
+jobs:
+  first-job:
+    runs-on: windows-latest
+    steps:
+      - name: Print greeting
+        run: print('Hello World!')
+      - name: Print goodbye
+        run: print('Done - bye')
